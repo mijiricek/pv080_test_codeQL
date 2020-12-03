@@ -52,7 +52,8 @@ jobs:
     #- name: Autobuild
     #  uses: github/codeql-action/autobuild@v1
     - if: matrix.language == 'cpp'
-        run: g++ ./fail.cpp
+        run: |
+            g++ ./fail.cpp
     
     - if: matrix.language == 'python'
         uses: github/codeql-action/autobuild@v1
