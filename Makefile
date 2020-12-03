@@ -1,2 +1,2 @@
 main:
-    g++ ./fail.cpp
+    g++ fail.cpp
